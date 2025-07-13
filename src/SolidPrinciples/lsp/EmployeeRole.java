@@ -1,4 +1,4 @@
-package SolidPrinciples.LSP;
+package SolidPrinciples.lsp;
 
 public enum EmployeeRole {
     MANAGER,

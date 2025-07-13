@@ -1,4 +1,4 @@
-package SolidPrinciples.OCP;
+package SolidPrinciples.ocp;
 
 public class DatabaseConnection {
     void connect() {

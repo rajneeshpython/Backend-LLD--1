@@ -1,4 +1,4 @@
-package SolidPrinciples.OCP;
+package SolidPrinciples.ocp;
 
 import java.util.HashMap;
 import java.util.Map;

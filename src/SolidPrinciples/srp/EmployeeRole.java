@@ -1,4 +1,4 @@
-package SolidPrinciples.SRP;
+package SolidPrinciples.srp;
 
 public enum EmployeeRole {
     MANAGER,

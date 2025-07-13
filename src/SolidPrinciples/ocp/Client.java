@@ -1,4 +1,4 @@
-package SolidPrinciples.OCP;
+package SolidPrinciples.ocp;
 
 public class Client{
     public static void main(String[] args) {

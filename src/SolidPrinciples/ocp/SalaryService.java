@@ -1,4 +1,4 @@
-package SolidPrinciples.OCP;
+package SolidPrinciples.ocp;
 
 public class SalaryService {
     public double calculateSalary(Employee employee, SalaryCalculator calculator){

@@ -1,8 +1,7 @@
-package SolidPrinciples.SRP;
+package SolidPrinciples.ocp;
 
 public class EmpDAO {
     DatabaseConnection dbConnection;
-
     public EmpDAO() {
         dbConnection = new DatabaseConnection();
     }
@@ -16,16 +15,10 @@ public class EmpDAO {
         dbConnection.disconnect();
     }
 
-   public void updateEmployee(Employee employee){
-        dbConnection.connect();
-        System.out.println("Employee updated with following details");
-        System.out.println("Name : " + employee.getName());
-        System.out.println("Role : " + employee.getRole());
-        System.out.println("Salary : " + employee.getSalary());
-   }
-   public void deleteEmployee(Employee employee){
+    public void deleteEmployee(Employee employee){
         dbConnection.connect();
         System.out.println("Employee deleted with following details");
         System.out.println("Name : " + employee.getName());
-   }
+        dbConnection.disconnect();
+    }
 }

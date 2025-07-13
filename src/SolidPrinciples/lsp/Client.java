@@ -1,4 +1,4 @@
-package SolidPrinciples.LSP;
+package SolidPrinciples.lsp;
 
 public class Client {
     public static void main(String[] args) {

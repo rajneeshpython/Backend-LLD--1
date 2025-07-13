@@ -1,4 +1,4 @@
-package SolidPrinciples.LSP;
+package SolidPrinciples.ocp;
 
 public class DeveloperSalaryCalculator implements SalaryCalculator{
     @Override

@@ -1,25 +1,23 @@
-package SolidPrinciples.SRP;
+package SolidPrinciples.lsp;
 
 public class Employee {
     private String name;
-    private EmployeeRole role;
     private double salary;
+    private EmployeeRole role;
 
-    public Employee(String name, EmployeeRole role, double salary) {
+    public Employee(String name, double salary, EmployeeRole role) {
         this.name = name;
-        this.role = role;
         this.salary = salary;
+        this.role = role;
     }
 
     public String getName() {
         return name;
     }
-
-    public EmployeeRole getRole() {
-        return role;
-    }
-
     public double getSalary() {
         return salary;
+    }
+    public EmployeeRole getRole() {
+        return role;
     }
 }
