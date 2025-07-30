@@ -2,5 +2,6 @@ package designpattern.factory.mobilefactory;
 
 public enum ModelType {
     MiBolt,
-    MiFire
+    MiFire,
+    MiPlus
 }

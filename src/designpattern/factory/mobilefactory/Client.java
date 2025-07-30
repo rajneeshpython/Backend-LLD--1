@@ -15,5 +15,11 @@ public class Client {
         mobile2.cpuConfiguration();
         mobile2.ramConfiguration();
         mobile2.price();
+
+        System.out.println("Creating MiPlus");
+        MiModel mobile3 = factory.produceMobile(ModelType.MiPlus);
+        mobile3.cpuConfiguration();
+        mobile3.ramConfiguration();
+        mobile3.price();
     }
 }

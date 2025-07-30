@@ -8,6 +8,8 @@ public class FactoryMethodClass {
         }
         else if (model == ModelType.MiFire) {
             mobile = new MiFire();
+        } else if (model == ModelType.MiPlus) {
+            mobile = new MiPlus();
         }
         return mobile;
     }
