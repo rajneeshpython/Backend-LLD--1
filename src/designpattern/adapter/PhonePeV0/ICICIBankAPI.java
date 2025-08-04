@@ -2,7 +2,7 @@ package designpattern.adapter.PhonePeV0;
 
 public class ICICIBankAPI {
     public int getBalance(){
-        System.out.println("Getting balance via YesBankAPI  ");
+        System.out.println("Getting balance via ICICIBankAPI");
         return 100;
     }
 
