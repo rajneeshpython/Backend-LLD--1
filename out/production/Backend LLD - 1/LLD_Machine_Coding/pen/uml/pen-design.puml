@@ -1,0 +1,41 @@
+@startuml
+abstract class Pen{
+    - brand: String
+    - ink: Ink
+    - nib: Nib
+    - mechanism: Mechanism
+    - refillable: boolean
+    + write(text: String)
+    + refill(ink: Ink)
+}
+
+class BallPen
+class GelPen
+class FountainPen
+
+class Ink{
+    - color: String
+    - capacityML: double
+    - viscosity: double
+}
+
+class Nib{
+    - sizeMM: int
+    - material: String
+}
+
+enum Mechanism{
+    CLICK
+    TWIST
+    CAP
+}
+
+Pen <|-- BallPen
+Pen <|-- GelPen
+Pen <|-- FountainPen
+
+Pen --> Ink
+Pen --> Nib
+Pen --> Mechanism
+
+@enduml

@@ -1,0 +1,29 @@
+package LLD_Machine_Coding.pen;
+
+public class BallPen extends Pen{
+    public BallPen(String brand, Ink ink, Nib nib, Mechanism mech, boolean refillable) {
+        super(brand, ink, nib, mech, refillable);
+    }
+
+    @Override
+    public void write(String text) {
+        Ink ink = getInk();
+        if(ink == null){
+            System.out.println("No Ink category present!");
+            return;
+        }
+        System.out.println(getBrand() + " BallPen writing: " + text);
+        ink.consume(1.0);
+    }
+
+    @Override
+    public void refill(Ink ink) {
+        if(isRefillable()){
+            setInk(ink);
+            System.out.println(getBrand() + " BallPen refilled with : " + ink.getColor() + " ink");
+        }
+        else {
+            System.out.println(getBrand() + " BallPen is not refillable!");
+        }
+    }
+}
